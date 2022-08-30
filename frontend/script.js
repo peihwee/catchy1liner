@@ -16,7 +16,8 @@ function WaitAwhile(delay)
 
 function GetRandomQuote()
 {
-    axios.get('https://catchy1liner.herokuapp.com/api/quote', {})
+    //axios.get('https://catchy1liner.herokuapp.com/api/quote', {})
+    axios.get('https://catchy1liner.azurewebsites.net/api/quote', {})
     .then((response) => {
         console.log(response.data); //View in Browser's Developer Tools
 
